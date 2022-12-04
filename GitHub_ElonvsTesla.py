@@ -40,7 +40,6 @@ df = pd.merge(StocksDF, TweetsDF, on = "Date")
 df = df.drop_duplicates(subset='Date', keep = "first")
 df.reset_index(drop=True, inplace=True)
 
-#Sentiment Analysis
 
 #Cleaning Text
 def cleanTxt(text):
